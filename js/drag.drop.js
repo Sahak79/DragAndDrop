@@ -10,7 +10,8 @@ var DragModule = (function() {
         for (var i = 0; i < elements.length; i++) {
             elements[i].addEventListener("mousedown", eleMouseDown, false);
         }
-        document.querySelector('body').onkeydown = function (e) {
+
+        document.getElementsByTagName('body')[0].onkeydown = function (e) {
             if ( !e.metaKey ) {
                 e.preventDefault();
             }
