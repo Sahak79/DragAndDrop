@@ -33,3 +33,7 @@ li a:hover {
 li>ul{
     display: none;
 }
+
+ul li:hover ul {
+    display: block;
+}
