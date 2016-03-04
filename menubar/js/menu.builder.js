@@ -33,7 +33,7 @@ var MenuModule = (function(){
                 var subMenu_li_node = document.createElement("LI");
                 var a_node = document.createElement("A");
                 var name = document.createTextNode(data[menuKey].sub[i].name);
-                a_node.setAttribute('hred', data[menuKey].sub[i].link);
+                a_node.setAttribute('href', data[menuKey].sub[i].link);
                 a_node.appendChild(name);
                 subMenu_li_node.appendChild(a_node);
                 ul_node.appendChild(subMenu_li_node);
